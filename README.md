@@ -6,7 +6,7 @@
 [dazn-lambda-power-tools ](https://github.com/getndazn/dazn-lambda-powertools),  
 `a collection of middy middlewares` use the `Middy 1.x version`
 
-[Middy 2.x](https://github.com/middyjs/middy/tree/main) provides a cloudwatch-metrics Implementation [link](https://github.com/middyjs/middy/tree/main/packages/cloudwatch-metrics)
+[Middy 2.x](https://github.com/middyjs/middy/tree/main) provides a cloudwatch-metrics Implementation, see [link](https://github.com/middyjs/middy/tree/main/packages/cloudwatch-metrics)
 
 This repository is created in order to test the usage of `Middy 2.x cloudwatch-metrics Implementation` with chosen `middy mniddlewares` from the `dazn power tools collection`.
 
