@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@dazn/lambda-powertools-middleware-correlation-ids": "^1.28.1",
-    "@dazn/lambda-powertools-middleware-sample-logging": "^1.28.1",
     "@middy/core": "^1.5.2",
     "aws-embedded-metrics": "^2.0.4",
     "aws-sdk": "^2.888.0"
