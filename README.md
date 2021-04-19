@@ -19,5 +19,5 @@ Because of the incompatibility between `Middy 2.x` and `Middy 1.x` a cloudwatch-
 - [v2](v2/) : uses `Middy version 2.0.1` and `@dazn/lambda-powertools-middleware-correlation-ids` and `cloudwatch-metrics Impl. of middy version 2.0.1`
 
 - [v1-cloudwatchMetrics](v1-cloudwatchMetrics/) : uses `Middy version 1.5.2` and `@dazn/lambda-powertools-middleware-correlation-ids` and created [cloudwatch-metrics.js](v1-cloudwatchMetrics/cloudwatch-metrics.js) compatible with `Middy version 1.5.2`  
-  Follows _almost_ the implementation of middy 2.x [cloudwatch-metrics](https://github.com/middyjs/middy/tree/main/packages/cloudwatch-metrics) . _Almost_ by respecting the interface spec. of middy 1.x.
-  Depends on: `aws-embedded-metrics` and
+  Follows _almost_ the implementation of middy 2.x [cloudwatch-metrics](https://github.com/middyjs/middy/tree/main/packages/cloudwatch-metrics) . _Almost_ by respecting the interface spec. of middy 1.x.  
+  Depends on: `aws-embedded-metrics`
