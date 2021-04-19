@@ -1,8 +1,6 @@
 const awsEmbeddedMetrics = require("aws-embedded-metrics");
-const Log = require("@dazn/lambda-powertools-logger");
 
 module.exports = (opts = {}) => {
-  
   const defaults = {};
   const options = { ...defaults, ...opts };
 
@@ -25,11 +23,7 @@ module.exports = (opts = {}) => {
   };
 
   const cloudwatchMetricsAfter = async (request) => {
-    try {
-      await request.context.metrics.flush();
-    } catch (error) {
-      Log.info("error flushing metrics...", { ...error });
-    }
+    await request.context.metrics.flush();
   };
 
   return {
