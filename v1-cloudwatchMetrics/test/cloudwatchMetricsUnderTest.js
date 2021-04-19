@@ -42,7 +42,7 @@ describe(`When we use cloudwatch-metrics Impl. according to spec. of @middy/core
 
       await promiseHelper(wrapped)({}, {});
     });
-    it(`should call the before middlewares respecting the order of the middy specification`, async function () {
+    it(`should call the middlewares respecting the order of the middy specification`, async function () {
       const beforeStub = sandbox.stub();
       const afterStub = sandbox.stub();
       const middlewareMock = sandbox.stub().returns({
@@ -63,6 +63,7 @@ describe(`When we use cloudwatch-metrics Impl. according to spec. of @middy/core
 
       expect(middlewareMock.calledOnce).to.be.true;
       expect(beforeStub.calledOnce).to.be.true;
+      expect(afterStub.calledOnce).to.be.true;
     });
   });
 });
